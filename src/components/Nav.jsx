@@ -85,10 +85,10 @@ export default function Nav() {
                 <Button onClick={() => setToggle(!toggle)}><Icon icon={faBars}/></Button>
             </LogoWrapper>
             <Wrapper toggle={toggle}>
-                <Link to="/">Hjem</Link>
-                <Link to="/about">Månen</Link>
-                <Link to="/activities">Aktiviteter</Link>
-                <Link to="/booking">Booking</Link>
+                <Link to="/tema-8">Hjem</Link>
+                <Link to="/tema-8/about">Månen</Link>
+                <Link to="/tema-8/activities">Aktiviteter</Link>
+                <Link to="/tema-8/booking">Booking</Link>
             </Wrapper>
         </NavBar>
     )

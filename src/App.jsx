@@ -11,13 +11,13 @@ function App() {
   return (
     <>
       <GlobalStyle/>
-      <BrowserRouter>
+      <BrowserRouter basename="/tema-8">
         <Nav/>
         <Routes>
           <Route index element={<Landing/>}/>
-          <Route path="/about" element={<About/>}/>
-          <Route path="/activities" element={<Activities/>}/>
-          <Route path="/booking" element={<Booking/>}/>
+          <Route path="/tema-8/about" element={<About/>}/>
+          <Route path="/tema-8/activities" element={<Activities/>}/>
+          <Route path="/tema-8/booking" element={<Booking/>}/>
         </Routes>
       </BrowserRouter>
       <Footer/>
