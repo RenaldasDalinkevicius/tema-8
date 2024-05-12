@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <GlobalStyle/>
-      <BrowserRouter>
+      <BrowserRouter basename="/tema-8/">
         <Nav/>
         <Routes>
           <Route index element={<Landing/>}/>
