@@ -80,7 +80,7 @@ export function BookingMenuComponent () {
     const dispatch = useDispatch()
     const total = useSelector((state) => state.booking.total)
     const adults = useSelector((state) => state.booking.adults)
-    const kids = useSelector((state) => state.booking.adults)
+    const kids = useSelector((state) => state.booking.kids)
     const arrive = useSelector((state) => state.booking.arrive)
     const depart = useSelector((state) => state.booking.depart)
     const navigate = useNavigate()
