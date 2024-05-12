@@ -7,6 +7,8 @@ export const bookingSlice = createSlice({
         arrive: "",
         depart: "",
         total: 0,
+        adults: 0,
+        kids: 0,
         rooms: []
     },
     reducers: {
@@ -21,10 +23,16 @@ export const bookingSlice = createSlice({
         },
         updateRooms: (state) => {
             state.rooms = data.data.filter(room => room.size >= state.total)
+        },
+        updateAdults: (state, action) => {
+            state.adults = action.payload
+        },
+        updateKids: (state, action) => {
+            state.kids = action.payload
         }
     }
 })
 
-export const {updateArrive, updateDepart, updateTotal, updateRooms} = bookingSlice.actions
+export const {updateArrive, updateDepart, updateTotal, updateRooms, updateAdults, updateKids} = bookingSlice.actions
 
 export default bookingSlice.reducer

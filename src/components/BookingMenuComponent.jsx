@@ -6,7 +6,7 @@ import DatePicker from "react-datepicker"
 import "react-datepicker/dist/react-datepicker.css";
 import { subDays } from "date-fns"
 import { useDispatch, useSelector } from "react-redux"
-import { updateArrive, updateDepart, updateTotal, updateRooms } from "./bookingSlice"
+import { updateArrive, updateDepart, updateTotal, updateRooms, updateAdults, updateKids } from "./bookingSlice"
 import { useNavigate } from "react-router-dom"
 
 const Wrapper = styled.section`
@@ -77,10 +77,10 @@ const MarginText = styled.p`
 
 export function BookingMenuComponent () {
     const [isOpen, setIsOpen] = useState(false)
-    const [kids, setKids] = useState(0)
-    const [adults, setAdults] = useState(0)
     const dispatch = useDispatch()
     const total = useSelector((state) => state.booking.total)
+    const adults = useSelector((state) => state.booking.adults)
+    const kids = useSelector((state) => state.booking.adults)
     const arrive = useSelector((state) => state.booking.arrive)
     const depart = useSelector((state) => state.booking.depart)
     const navigate = useNavigate()
@@ -102,15 +102,15 @@ export function BookingMenuComponent () {
                 <FloatingDiv>
                     <FloatingButton>
                         <MarginText>Barn:</MarginText>
-                        <Icon icon={faMinus} clickable={"true"} onClick={() => kids>0&&setKids(kids - 1)}/>
+                        <Icon icon={faMinus} clickable={"true"} onClick={() => kids>0&&updateKids(kids - 1)}/>
                         {kids}
-                        <Icon icon={faPlus} clickable={"true"} onClick={() => setKids(kids + 1)}/>
+                        <Icon icon={faPlus} clickable={"true"} onClick={() => updateKids(kids + 1)}/>
                     </FloatingButton>
                     <FloatingButton>
                         <MarginText>Voksen:</MarginText>
-                        <Icon icon={faMinus} clickable={"true"} onClick={() => adults>0&&setAdults(adults - 1)}/>
+                        <Icon icon={faMinus} clickable={"true"} onClick={() => adults>0&&updateAdults(adults - 1)}/>
                         {adults}
-                        <Icon icon={faPlus} clickable={"true"} onClick={() => setAdults(adults + 1)}/>
+                        <Icon icon={faPlus} clickable={"true"} onClick={() => updateAdults(adults + 1)}/>
                     </FloatingButton>
                 </FloatingDiv>}
             </TotalWrapper>
