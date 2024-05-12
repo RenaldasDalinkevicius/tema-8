@@ -102,15 +102,15 @@ export function BookingMenuComponent () {
                 <FloatingDiv>
                     <FloatingButton>
                         <MarginText>Barn:</MarginText>
-                        <Icon icon={faMinus} clickable={"true"} onClick={() => kids>0&&updateKids(kids - 1)}/>
+                        <Icon icon={faMinus} clickable={"true"} onClick={() => kids>0&&dispatch(updateKids(kids - 1))}/>
                         {kids}
-                        <Icon icon={faPlus} clickable={"true"} onClick={() => updateKids(kids + 1)}/>
+                        <Icon icon={faPlus} clickable={"true"} onClick={() => dispatch(updateKids(kids + 1))}/>
                     </FloatingButton>
                     <FloatingButton>
                         <MarginText>Voksen:</MarginText>
-                        <Icon icon={faMinus} clickable={"true"} onClick={() => adults>0&&updateAdults(adults - 1)}/>
+                        <Icon icon={faMinus} clickable={"true"} onClick={() => adults>0&&dispatch(updateAdults(adults - 1))}/>
                         {adults}
-                        <Icon icon={faPlus} clickable={"true"} onClick={() => updateAdults(adults + 1)}/>
+                        <Icon icon={faPlus} clickable={"true"} onClick={() => dispatch(updateAdults(adults + 1))}/>
                     </FloatingButton>
                 </FloatingDiv>}
             </TotalWrapper>
