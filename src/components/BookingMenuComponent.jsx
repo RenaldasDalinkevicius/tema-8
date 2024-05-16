@@ -43,7 +43,6 @@ const Icon = styled(FontAwesomeIcon)`
     ${props => props.clickable==="true"&&
         "padding: var(--spacing-small); cursor: pointer; border-radius: var(--spacing-small); &: hover {background-color: var(--color-secondary-light)}; tabindex:0; &: focus {outline: 1px solid var(--color-accent-light); background-color: var(--color-secondary-light)};"
     }
-
 `
 const Search = styled.button`
     width: 100%;

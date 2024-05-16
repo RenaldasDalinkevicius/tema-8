@@ -29,8 +29,8 @@ const Logo = styled.img`
     width: 55px;
 `
 const Wrapper = styled.div`
-    display: ${props => props.toggle?"flex":"none"};
-    flex-direction: ${props => props.toggle&&"column"};
+    display: ${props => props.toggle==="true"?"flex":"none"};
+    flex-direction: ${props => props.toggle==="true"&&"column"};
     @media (min-width: 600px) {
         display: flex;
     }
@@ -88,7 +88,7 @@ export default function Nav() {
                 <Logo src={logoImage} alt="Logo bildet"/>
                 <Button aria-label="Navigasjon knappen"tabIndex={0} onClick={() => setToggle(!toggle)}><Icon icon={faBars}/></Button>
             </LogoWrapper>
-            <Wrapper toggle={toggle}>
+            <Wrapper toggle={JSON.stringify(toggle)}>
                 <Link tabIndex={0} to="/">Hjem</Link>
                 <Link tabIndex={0} to="/about">Månen</Link>
                 <Link tabIndex={0} to="/activities">Aktiviteter</Link>
