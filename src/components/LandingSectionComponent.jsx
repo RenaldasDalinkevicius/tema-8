@@ -19,7 +19,7 @@ const Button = styled.button`
 `
 
 
-export function LandingSectionComponent({subTitle, title, description, image1, image2, image3, image4}) {
+export function LandingSectionComponent({subTitle, title, description, image1, image2, image3, image4, image1alt, image2alt, image3alt, image4alt}) {
     return (
         <Section>
             <TextWrapper>
@@ -28,7 +28,7 @@ export function LandingSectionComponent({subTitle, title, description, image1, i
                 <p>{description}</p>
                 <Button>Les mer</Button>
             </TextWrapper>
-            <ImageComponent image1={image1} image2={image2} image3={image3} image4={image4}/>
+            <ImageComponent image1={image1} image2={image2} image3={image3} image4={image4} image1alt={image1alt} image2alt={image2alt} image3alt={image3alt} image4alt={image4alt}/>
         </Section>
     )
 }

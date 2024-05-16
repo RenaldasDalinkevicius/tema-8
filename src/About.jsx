@@ -20,7 +20,7 @@ const Main = styled.main`
 
 export default function About() {
     const AboutMap = data.data.map(data => {
-        return <AboutComponent key={data.date} date={data.date} title={data.title} description={data.description} img1={data.img1} img2={data.img2} img3={data.img3} img4={data.img4}/>
+        return <AboutComponent key={data.date} date={data.date} title={data.title} description={data.description} img1={data.img1} img2={data.img2} img3={data.img3} img4={data.img4} img1alt={data.img1alt} img2alt={data.img2alt} img3alt={data.img3alt} img4alt={data.img4alt}/>
     })
 
     return (

@@ -17,6 +17,11 @@ const GlobalStyle = createGlobalStyle`
         --font-size-normal: 1rem;
         --font-size-small: 0.7rem;
     }
+    #root {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
     .react-datepicker-popper {
         display: flex;
         position: fixed;
@@ -54,6 +59,7 @@ const GlobalStyle = createGlobalStyle`
         font-size: var(--font-size-small);
     }
     a {
+        pointer-events: auto;
         font-size: var(--font-size-normal);
         color: var(--color-text-light);
         padding: var(--spacing-medium);
@@ -61,7 +67,7 @@ const GlobalStyle = createGlobalStyle`
         border: 1px solid transparent;
         &: hover {
             background-color: var(--color-secondary-light);
-        }
+        };
         &: focus {
             outline: none;
             border: 1px solid var(--color-accent-light);

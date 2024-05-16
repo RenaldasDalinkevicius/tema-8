@@ -23,7 +23,7 @@ const Wrapper = styled.main`
 export default function Booking() {
     const rooms = useSelector((state) => state.booking.rooms)
     const Rooms = rooms.map(data => {
-        return <RoomComponent key={data.title} title={data.title} roomtype={data.roomtype} roomfor={data.roomfor} image={data.image} price={data.price}/>
+        return <RoomComponent key={data.title} title={data.title} roomtype={data.roomtype} roomfor={data.roomfor} image={data.image} price={data.price} imgAlt={data.imgAlt}/>
     })
     useEffect(()=>{
         window.scrollTo(0, 0);

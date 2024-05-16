@@ -41,7 +41,7 @@ const Icon = styled(FontAwesomeIcon)`
     margin-left: ${props => props.user==="true"&&"auto"};
     ${props => props.open&&"transform: rotate(180deg)"}
     ${props => props.clickable==="true"&&
-        "padding: var(--spacing-small); cursor: pointer; border-radius: var(--spacing-small); &: hover {background-color: var(--color-secondary-light)}"
+        "padding: var(--spacing-small); cursor: pointer; border-radius: var(--spacing-small); &: hover {background-color: var(--color-secondary-light)}; tabindex:0; &: focus {outline: 1px solid var(--color-accent-light); background-color: var(--color-secondary-light)};"
     }
 
 `
@@ -102,15 +102,15 @@ export function BookingMenuComponent () {
                 <FloatingDiv>
                     <FloatingButton>
                         <MarginText>Barn:</MarginText>
-                        <Icon icon={faMinus} clickable={"true"} onClick={() => kids>0&&dispatch(updateKids(kids - 1))}/>
+                        <Icon tabIndex={0} icon={faMinus} clickable={"true"} onClick={() => kids>0&&dispatch(updateKids(kids - 1))}/>
                         {kids}
-                        <Icon icon={faPlus} clickable={"true"} onClick={() => dispatch(updateKids(kids + 1))}/>
+                        <Icon tabIndex={0} icon={faPlus} clickable={"true"} onClick={() => dispatch(updateKids(kids + 1))}/>
                     </FloatingButton>
                     <FloatingButton>
                         <MarginText>Voksen:</MarginText>
-                        <Icon icon={faMinus} clickable={"true"} onClick={() => adults>0&&dispatch(updateAdults(adults - 1))}/>
+                        <Icon tabIndex={0} icon={faMinus} clickable={"true"} onClick={() => adults>0&&dispatch(updateAdults(adults - 1))}/>
                         {adults}
-                        <Icon icon={faPlus} clickable={"true"} onClick={() => dispatch(updateAdults(adults + 1))}/>
+                        <Icon tabIndex={0} icon={faPlus} clickable={"true"} onClick={() => dispatch(updateAdults(adults + 1))}/>
                     </FloatingButton>
                 </FloatingDiv>}
             </TotalWrapper>

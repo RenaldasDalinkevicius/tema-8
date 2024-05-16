@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import logoImage from "../assets/Logo.png"
-import { Link } from "react-router-dom";
+import { Link as link} from "react-router-dom";
 import { useState } from "react";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -36,6 +36,7 @@ const Wrapper = styled.div`
     }
 `
 const Icon = styled(FontAwesomeIcon)`
+    cursor: pointer;
     display: none;
     font-size: var(--font-size-large);
     color: var(--color-text-light);
@@ -75,20 +76,23 @@ const Button = styled.button`
         display: none
     }
 `
+const Link = styled(link)`
+    pointer-events: auto;
+`
 
 export default function Nav() {
     const [toggle, setToggle] = useState(false)
     return (
         <NavBar>
             <LogoWrapper>
-                <Logo src={logoImage}/>
-                <Button onClick={() => setToggle(!toggle)}><Icon icon={faBars}/></Button>
+                <Logo src={logoImage} alt="Logo bildet"/>
+                <Button aria-label="Navigasjon knappen"tabIndex={0} onClick={() => setToggle(!toggle)}><Icon icon={faBars}/></Button>
             </LogoWrapper>
             <Wrapper toggle={toggle}>
-                <Link to="/">Hjem</Link>
-                <Link to="/about">Månen</Link>
-                <Link to="/activities">Aktiviteter</Link>
-                <Link to="/booking">Booking</Link>
+                <Link tabIndex={0} to="/">Hjem</Link>
+                <Link tabIndex={0} to="/about">Månen</Link>
+                <Link tabIndex={0} to="/activities">Aktiviteter</Link>
+                <Link tabIndex={0} to="/booking">Booking</Link>
             </Wrapper>
         </NavBar>
     )

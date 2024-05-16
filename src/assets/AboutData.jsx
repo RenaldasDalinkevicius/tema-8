@@ -22,36 +22,52 @@ export default {
             title: "Pionerårene: Den første månelandingen",
             description: "I 1969 var menneskeheten vitne til et bemerkelsesverdig øyeblikk da den første bemannede månelandingen fant sted. Med en modig besetning om bord landet romskipet Apollo 11 trygt på månens overflate, markeringen av et stort sprang for menneskeheten. Denne historiske begivenheten satte grunnlaget for fremtidig utforskning av månen og ble et symbol på menneskets grenseløse ambisjoner.",
             img1: section1Image1,
+            img1alt: "en av austranauts fra første landing på månen",
             img2: section1Image2,
+            img2alt: "Neil Armstrong, Michael Collins, Buzz Aldrin",
             img3: section1Image3,
-            img4: section1Image4
+            img3alt: "Neil Armstrong som har nettopp plantet flaget til USA på månen",
+            img4: section1Image4,
+            img4alt: "Neil Armstrong ved siden av USA flaget og romskipet som har landet på månen i bakgrunn"
         },
         {
             date: "2024",
             title: "Gjenbesøk til månen: Utforskingens gjenoppblomstring",
             description: "I 2024 ble månen på nytt satt i rampelyset da forskere og astronauter utførte en serie av banebrytende oppdrag for å utforske månens ressurser og potensial for bærekraftig bosetning. Denne nye æraen med måneutforskning inspirerte til videre innovasjon og åpnet døren for nye muligheter for menneskelig utforskning og kolonisering av månen.",
             img1: section2Image1,
+            img1alt: "Austranauts som har landet på månen for den andre gangen",
             img2: section2Image2,
+            img2alt: "Austranauts som har landet på månen for den andre gangen",
             img3: section2Image3,
-            img4: section2Image4
+            img3alt: "Romskipet som har landet på månen",
+            img4: section2Image4,
+            img4alt: "Hvordan jorden ser ut som fra månen"
         },
         {
             date: "2028",
             title: "teknologiske fremskritt: Bedre romskip for massepassasjerer",
             description: "I 2028 ble det introdusert revolusjonerende nye romfartøydesign som gjorde det mulig å transportere store mengder passasjerer trygt og effektivt til og fra månen. Disse avanserte romskipene representerte en milepæl i romfartsindustrien og banet vei for en ny æra med romturisme og interplanetariske reiser.",
             img1: section3Image1,
+            img1alt: "Ny kraftig romskip som har mulighet til å reise fra jorden og til månen flere ganger",
             img2: section3Image2,
+            img2alt: "Den nye kraftig romskip parkert på månen",
             img3: section3Image3,
-            img4: section3Image4
+            img3alt: "Den kraftigste romskip parkert på månen",
+            img4: section3Image4,
+            img4alt: "Kobling mellom romskip og base på månen",
         },
         {
             date: "2030",
             title: "Månehotellets fødsel: Et nytt kapittel i romturismens historie",
             description: "I 2030 åpnet det første månehotellet sine dører og markerte begynnelsen på en helt ny æra med romturisme. Dette banebrytende hotellet tilbød gjestene en unik mulighet til å bo og oppleve livet på månen, og representerte et skritt mot en fremtid der verdensrommet ville bli en tilgjengelig destinasjon for alle. Med komfortable fasiliteter og spektakulær utsikt over månelandskapet, ble månehotellet raskt et ikon for romfartens fremtidige potensial",
             img1: section4Image1,
+            img1alt: "Hotell på månen med jorden i bakgrunn",
             img2: section4Image2,
+            img2alt: "Konstruksjon av hotelle på månen med jorden i bakgrunn",
             img3: section4Image3,
-            img4: section4Image4
+            img3alt: "Demo versjon av hvordan hotelle skal se ut",
+            img4: section4Image4,
+            img4alt: "Konstruksjon av hotelle på månen",
         }
     ]
 }

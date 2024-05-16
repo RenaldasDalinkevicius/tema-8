@@ -15,6 +15,7 @@ export default {
             image: manekoia,
             price: "NOK 3500",
             size: 2,
+            imgAlt: "Månekoia"
         },
         {
             title: "Stjernehavn",
@@ -22,34 +23,35 @@ export default {
             roomfor: "- Passer for: 4 personer (Passer for familier eller små grupper)",
             image: stjernehavn,
             price: "NOK 4000",
-            size: 4
+            size: 4,
+            imgAlt: "Stjernehavn"
         },
         {
             title: "Kraterkroen",
             roomtype: "- Romtype: To enkeltsenger + Køyeseng",
             roomfor: "- Passer for: 4 personer (Perfekt for familier med barn)",
             image: kraterkroen,
-            price: "NOK 4570"
-            ,
-            size: 4
+            price: "NOK 4570",
+            size: 4,
+            imgAlt: "Kraterkroen"
         },
         {
             title: "Månelandet Suite",
             roomtype: "- Romtype: King-size seng + To enkeltsenger",
             roomfor: "- Passer for: 4 personer (Romslig og egnet for en familie)",
             image: manelandet_suite,
-            price: "NOK 10000"
-            ,
-            size: 4
+            price: "NOK 10000",
+            size: 4,
+            imgAlt: "Månelandet Suite"
         },
         {
             title: "Galaksens Hjem",
             roomtype: "- Romtype: To dobbeltsenger",
             roomfor: "- Passer for: 4 personer (Komfortabelt for en mellomstor familie)",
             image: galaksens_hjem,
-            price: "NOK 6700"
-            ,
-            size: 4
+            price: "NOK 6700",
+            size: 4,
+            imgAlt: "Galaksens Hjem"
         },
         
     ]

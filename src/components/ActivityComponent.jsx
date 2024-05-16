@@ -13,10 +13,10 @@ const Image = styled.img`
 
 `
 
-export function ActivityComponent({title, description, img}) {
+export function ActivityComponent({title, description, img, imgAlt}) {
     return (
         <Section>
-            <Image src={img}/>
+            <Image src={img} alt={imgAlt}/>
             <h2>{title}</h2>
             <p>{description}</p>
         </Section>

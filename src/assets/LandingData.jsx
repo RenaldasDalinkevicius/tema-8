@@ -14,18 +14,26 @@ export default {
             subtitle: "Om oss",
             description: "Velkommen til vårt eksklusive månehotell, et unikt reisemål hvor komfort  møter eventyr. Vår moderne og innovative månebase tilbyr enestående  fasiliteter, spektakulær utsikt over månelandskapet og en uforglemmelig  opplevelse for hele familien. Utforsk det ukjente og nyt luksuriøs  gjestfrihet på vår spektakulære destinasjon utenfor denne verden.",
             img1: section1Image1,
+            img1alt: "utsikten mot jorden fra en av rommene på hotelle",
             img2: section1Image2,
+            img2alt: "resepsjonen til hotell",
             img3: section1Image3,
-            img4: section1Image4
+            img3alt: "utsikten mot jorden fra en av rommene på hotelle", 
+            img4: section1Image4,
+            img4alt: "resepsjonen til hotell, men fra en annet vinkel",
         },
         {
             title: "Hvordan kommer du til MoonStay",
             subtitle: "Månen",
             description: "For å nå vårt hotell på månen,  vil gjestene ta del i en spennende reise gjennom rommet. Etter å ha  fullført jordens rutinemessige sikkerhetssjekker og opplæring, vil du gå om bord i en romrakett spesialdesignet for passasjerer. Med en erfaren besetning ved roret, vil reisen din til månen bli en minneverdig  opplevelse i seg selv. Etter en jevn og trygg reise vil du lande ved vår  moderne månebase, hvor vårt hotell venter på å ønske deg velkommen til en uforglemmelig opphold.",
             img1: section2Image1,
+            img1alt: "romskip på vei tilbaket til månen",
             img2: section2Image2,
+            img2alt: "romskip på vei til månen fra jorden",
             img3: section2Image3,
-            img4: section2Image4
+            img3alt: "romskip på vei til jorden fra månen",
+            img4: section2Image4,
+            img4alt: "2 romskip på vei til jorden fra månen"
         }
     ]
 }

@@ -20,7 +20,7 @@ const Main = styled.main`
 
 export default function Activities() {
     const ActivityMap = data.data.map(data => {
-        return <ActivityComponent  key={data.title} title={data.title} description={data.description} img={data.img}/>
+        return <ActivityComponent  key={data.title} title={data.title} description={data.description} img={data.img} imgAlt={data.imgAlt}/>
     })
     return (
         <Main>

@@ -40,10 +40,10 @@ const Button = styled.button`
     }
 `
 
-export function RoomComponent({title, roomtype, roomfor, image, price}) {
+export function RoomComponent({title, roomtype, roomfor, image, price, imgAlt}) {
     return (
         <MainDiv>
-            <Image src={image}/>
+            <Image src={image} alt={imgAlt}/>
             <Wrapper text="true">
                 <Titlte>
                     {title}
