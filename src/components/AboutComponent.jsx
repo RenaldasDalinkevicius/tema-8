@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ImageComponent } from "./ImageComponent";
+import { MoreButton } from "./MoreButton"
 
 const Section = styled.section`
     width: 100%;
@@ -27,7 +28,7 @@ const TextWrapper = styled.div`
     gap: var(--spacing-medium);
 `
 
-export function AboutComponent ({date, title, description, img1, img2, img3, img4, img1alt, img2alt, img3alt, img4alt}) {
+export function AboutComponent ({date, title, description, img1, img2, img3, img4, img1alt, img2alt, img3alt, img4alt, readMore}) {
     return (
         <Section>
             <Date>{date}</Date>
@@ -35,6 +36,7 @@ export function AboutComponent ({date, title, description, img1, img2, img3, img
                 <TextWrapper>
                     <h2>{title}</h2>
                     <p>{description}</p>
+                    <MoreButton text={readMore}/>
                 </TextWrapper>
                 {<ImageComponent image1={img1} image2={img2} image3={img3} image4={img4} image1alt={img1alt} image2alt={img2alt} image3alt={img3alt} image4alt={img4alt}/>}
             </Wrapper>

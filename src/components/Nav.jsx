@@ -12,7 +12,7 @@ const NavBar = styled.nav`
     justify-content: flex-end;
     position: fixed;
     padding: 0 var(--spacing-large);
-    height: calc(var(--spacing-medium) + var(--spacing-medium) + 15px);
+    height: fit-content;
     z-index: 1;
     @media (max-width: 400px) {
         padding: 0 var(--spacing-medium);
@@ -23,16 +23,17 @@ const NavBar = styled.nav`
     }
 `
 const Logo = styled.img`
-    align-self: auto;
+    align-self: center;
     margin-left: var(--spacing-medium);
-    height: 55px;
-    width: 55px;
+    height: var(--font-size-extraLarge);
+    width: var(--font-size-extraLarge);
 `
 const Wrapper = styled.div`
     display: ${props => props.toggle==="true"?"flex":"none"};
     flex-direction: ${props => props.toggle==="true"&&"column"};
     @media (min-width: 600px) {
         display: flex;
+        flex-direction: row;
     }
 `
 const Icon = styled(FontAwesomeIcon)`
@@ -88,7 +89,7 @@ export default function Nav() {
                 <Logo src={logoImage} alt="Logo bildet"/>
                 <Button aria-label="Navigasjon knappen"tabIndex={0} onClick={() => setToggle(!toggle)}><Icon icon={faBars}/></Button>
             </LogoWrapper>
-            <Wrapper toggle={JSON.stringify(toggle)}>
+            <Wrapper toggle={toggle}>
                 <Link tabIndex={0} to="/">Hjem</Link>
                 <Link tabIndex={0} to="/about">Månen</Link>
                 <Link tabIndex={0} to="/activities">Aktiviteter</Link>

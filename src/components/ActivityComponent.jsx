@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MoreButton } from "./MoreButton"
 
 const Section = styled.section`
     display: flex;
@@ -13,12 +14,13 @@ const Image = styled.img`
 
 `
 
-export function ActivityComponent({title, description, img, imgAlt}) {
+export function ActivityComponent({title, description, img, imgAlt, readMore}) {
     return (
         <Section>
             <Image src={img} alt={imgAlt}/>
             <h2>{title}</h2>
             <p>{description}</p>
+            <MoreButton text={readMore}/>
         </Section>
     )
 }

@@ -21,6 +21,16 @@ export default {
             img3alt: "utsikten mot jorden fra en av rommene på hotelle", 
             img4: section1Image4,
             img4alt: "resepsjonen til hotell, men fra en annet vinkel",
+            readMore: 
+            `Oppdag mer om vårt månehotell:
+
+            Utforsk våre rom og suiter,
+            les om våre unike aktiviteter og tjenester, inkludert månevandringer, stjernekikking og gourmetmatopplevelser.
+
+            Lær om vårt engasjement for bærekraft og miljøbevaring på månen, samt våre tilpassede tilbud for familier og grupper.
+
+            Bli med oss på en reise utenom det vanlige og planlegg din drømmeferie til månen i dag!
+            `
         },
         {
             title: "Hvordan kommer du til MoonStay",
@@ -33,7 +43,12 @@ export default {
             img3: section2Image3,
             img3alt: "romskip på vei til jorden fra månen",
             img4: section2Image4,
-            img4alt: "2 romskip på vei til jorden fra månen"
+            img4alt: "2 romskip på vei til jorden fra månen",
+            readMore:
+            `Etter å ha fullført jordens rutinemessige sikkerhetssjekker og opplæring, vil gjestene gå om bord i en romrakett spesialdesignet for passasjerer. Med avansert teknologi og komfortable fasiliteter ombord, vil du sette kursen mot månen sammen med en erfaren besetning ved roret. Underveis vil du kunne nyte en spektakulær utsikt over jorden og universet utenfor.
+
+            Mens du nærmer deg månen, vil du oppleve den spennende følelsen av vektløshet og se månens overflate komme nærmere gjennom vinduene. Etter en jevn og trygg reise vil romraketten lande ved vår moderne månebase, hvor vårt hotell venter på å ønske deg velkommen til en uforglemmelig opphold. Vår dedikerte stab vil være der for å ta imot deg og sørge for at du får en minneverdig og behagelig opplevelse fra det øyeblikket du setter foten på månen.
+            `
         }
     ]
 }

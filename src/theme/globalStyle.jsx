@@ -65,6 +65,7 @@ const GlobalStyle = createGlobalStyle`
         padding: var(--spacing-medium);
         text-decoration: none;
         border: 1px solid transparent;
+        align-self: center;
         &: hover {
             background-color: var(--color-secondary-light);
         };
@@ -74,6 +75,7 @@ const GlobalStyle = createGlobalStyle`
         }
     }
     button {
+        font-size: var(--font-size-normal);
         font-family: inherit;
         white-space: nowrap;
         background-color: var(--color-accent-light);

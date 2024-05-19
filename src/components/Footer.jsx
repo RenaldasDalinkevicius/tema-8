@@ -37,7 +37,7 @@ const Copyright = styled.p`
     color: inherit;
     margin-top: auto;
     margin-left: auto;
-    padding: 0 var(--spacing-medium);
+    padding: var(--spacing-medium);
 `
 const Text = styled.p`
     color: inherit;

@@ -37,6 +37,7 @@ const Button = styled.button`
     }
 `
 const Icon = styled(FontAwesomeIcon)`
+    align-self: center;
     font-size: var(--font-size-normal);
     margin-left: ${props => props.user==="true"&&"auto"};
     ${props => props.open&&"transform: rotate(180deg)"}

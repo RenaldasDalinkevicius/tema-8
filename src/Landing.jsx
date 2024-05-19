@@ -54,7 +54,7 @@ const BackgroundImage = styled.img`
 
 export default function Landing() {
     const LandingSectionMap = data.data.map(data => {
-        return <LandingSectionComponent key={data.subtitle} title={data.title} description={data.description} image1={data.img1} image2={data.img2} image3={data.img3} image4={data.img4} image1alt={data.img1alt} image2alt={data.img2alt} image3alt={data.img3alt} image4alt={data.img4alt}/>
+        return <LandingSectionComponent key={data.subtitle} title={data.title} description={data.description} image1={data.img1} image2={data.img2} image3={data.img3} image4={data.img4} image1alt={data.img1alt} image2alt={data.img2alt} image3alt={data.img3alt} image4alt={data.img4alt} readMore={data.readMore}/>
     })
 
     return (

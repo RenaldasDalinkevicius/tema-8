@@ -1,4 +1,4 @@
-import section1Image1 from "../assets/about/section1/img1.jpg"
+import section1Image1 from "../assets/about/section1/img1.webp"
 import section1Image2 from "../assets/about/section1/img2.jpeg"
 import section1Image3 from "../assets/about/section1/img3.jpg"
 import section1Image4 from "../assets/about/section1/img4.jpg"
@@ -28,7 +28,10 @@ export default {
             img3: section1Image3,
             img3alt: "Neil Armstrong som har nettopp plantet flaget til USA på månen",
             img4: section1Image4,
-            img4alt: "Neil Armstrong ved siden av USA flaget og romskipet som har landet på månen i bakgrunn"
+            img4alt: "Neil Armstrong ved siden av USA flaget og romskipet som har landet på månen i bakgrunn",
+            readMore:`
+            Neil Armstrong og Buzz Aldrin tilbrakte 21 timer på månens overflate, samlet prøver og gjennomførte eksperimenter. Deres prestasjoner inspirerte en hel generasjon og la grunnlaget for alle fremtidige romfartsoppdrag. Armstrongs ikoniske ord, 'That's one small step for man, one giant leap for mankind,' ble inngravert i historien som et testament til menneskets evne til å utforske det ukjente
+            `
         },
         {
             date: "2024",
@@ -41,7 +44,10 @@ export default {
             img3: section2Image3,
             img3alt: "Romskipet som har landet på månen",
             img4: section2Image4,
-            img4alt: "Hvordan jorden ser ut som fra månen"
+            img4alt: "Hvordan jorden ser ut som fra månen",
+            readMore:`
+            Artemis-programmet, ledet av NASA, hadde som mål å etablere en bærekraftig tilstedeværelse på månen ved å bygge den første månebasen. Oppdragene inkluderte testing av ny teknologi for bruk av månens ressurser, som å utvinne vann fra is i kratre og bruke det til å produsere oksygen og drivstoff. Dette var avgjørende skritt mot menneskelig kolonisering av andre himmellegemer.
+            `
         },
         {
             date: "2028",
@@ -55,6 +61,9 @@ export default {
             img3alt: "Den kraftigste romskip parkert på månen",
             img4: section3Image4,
             img4alt: "Kobling mellom romskip og base på månen",
+            readMore:`
+            SpaceX, Blue Origin, og andre private selskaper utviklet romskip med kapasiteter som tidligere var utenkelige. Disse romskipene var utstyrt med kunstig gravitasjon, romslige kabiner og underholdningsfasiliteter for å gjøre reisen komfortabel for passasjerene. Dette markerte starten på kommersielle romreiser, der vanlige borgere kunne oppleve verdensrommet uten å være astronauter.
+            `
         },
         {
             date: "2030",
@@ -68,6 +77,9 @@ export default {
             img3alt: "Demo versjon av hvordan hotelle skal se ut",
             img4: section4Image4,
             img4alt: "Konstruksjon av hotelle på månen",
+            readMore:`
+            Månehotellet, kjent som MoonStay, ble bygget ved hjelp av avanserte byggematerialer som kunne motstå de ekstreme forholdene på månen. Hotellet hadde en rekke luksuriøse rom, suiter og fritidsområder, inkludert et observatorium og et null-gravitasjonsbasseng. Gjester kunne delta i aktiviteter som månevandringer, stjernekikking og interaktive vitenskapsprogrammer, og nyte eksklusive kulinariske opplevelser inspirert av både jordisk og månebasert gastronomi.
+            `
         }
     ]
 }
