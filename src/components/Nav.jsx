@@ -79,6 +79,7 @@ const Button = styled.button`
 `
 const Link = styled(link)`
     pointer-events: auto;
+    width: 100%;
 `
 
 export default function Nav() {
@@ -87,9 +88,9 @@ export default function Nav() {
         <NavBar>
             <LogoWrapper>
                 <Logo src={logoImage} alt="Logo bildet"/>
-                <Button aria-label="Navigasjon knappen"tabIndex={0} onClick={() => setToggle(!toggle)}><Icon icon={faBars}/></Button>
+                <Button aria-label="Navigasjon knappen" tabIndex={0} onClick={() => setToggle(!toggle)}><Icon icon={faBars}/></Button>
             </LogoWrapper>
-            <Wrapper toggle={toggle}>
+            <Wrapper toggle={JSON.stringify(toggle)}>
                 <Link tabIndex={0} to="/">Hjem</Link>
                 <Link tabIndex={0} to="/about">Månen</Link>
                 <Link tabIndex={0} to="/activities">Aktiviteter</Link>

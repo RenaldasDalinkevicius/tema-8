@@ -37,7 +37,7 @@ const Copyright = styled.p`
     color: inherit;
     margin-top: auto;
     margin-left: auto;
-    padding: var(--spacing-medium);
+    padding: var(--spacing-small) var(--spacing-medium);
 `
 const Text = styled.p`
     color: inherit;
@@ -55,7 +55,7 @@ const Icon = styled(FontAwesomeIcon)`
     }
 `
 
-export default function Footer() {
+export default function Footer() { 
     return (
         <FooterTag>
             <Logo src={logoImage} alt="logo bildet"/>
