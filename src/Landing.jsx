@@ -4,6 +4,8 @@ import background from "./assets/landing/LandingPageBackground.jpg"
 import { BookingMenuComponent } from "./components/BookingMenuComponent.jsx"
 import data from "./assets/LandingData.jsx"
 import { useNavigate } from "react-router-dom"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons" 
 
 const Main = styled.main`
     display: flex;
@@ -55,6 +57,21 @@ const BackgroundImage = styled.img`
 const BookingButton = styled.button`
     margin: 0 auto;
 `
+const Icon = styled(FontAwesomeIcon)`
+    font-size: var(--font-size-normal);
+    Color: var(--color-text-light);
+    Padding: var(--spacing-medium);
+`
+const Text = styled.p`
+    font-size: var(--font-size-normal);
+    color: var(--color-text-light);
+    padding: var(--spacing-medium);
+    text-align: center;
+`
+const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+`
 
 export default function Landing() {
     const LandingSectionMap = data.data.map(data => {
@@ -68,6 +85,10 @@ export default function Landing() {
                 <Title>MoonStay</Title>
                 <Slogan>Opplev himmelen utenfor himmelen: Ditt måneeventyr begynner her</Slogan>
                 <BookingButton onClick={() => navigate("/booking")}>Bestill nå</BookingButton>
+                <Wrapper>
+                    <Text>For mer informasjon</Text>
+                    <Icon icon={faArrowDown}/>
+                </Wrapper>
             </Intro>
             <About>
                 <BookingMenuComponent/>
