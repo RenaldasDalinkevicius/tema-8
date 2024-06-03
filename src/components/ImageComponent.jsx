@@ -8,13 +8,13 @@ const ImageGrid = styled.div`
     "one one one three"
     "four four four four"
     "four four four four";
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(4, 1fr);
-    max-height: 600px;
+    grid-template-rows: repeat(4, 25%);
+    grid-template-columns: repeat(4, 25%);
+    max-height: 500px;
     @media (min-width: 700px) {
         width: 100%;
     }
-
+    overflow: hidden;
 `
 
 const Image = styled.img`
