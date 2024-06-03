@@ -1,15 +1,22 @@
 import styled from "styled-components"
 
 const ImageGrid = styled.div`
-    width: 100%;
     display: grid;
     gap: var(--spacing-medium);
     grid-template-areas:
-    "one one two"
-    "one one three"
-    "four four four";
-    max-height: 500px;
+    "one one one two"
+    "one one one three"
+    "four four four four"
+    "four four four four";
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    max-height: 600px;
+    @media (min-width: 700px) {
+        width: 100%;
+    }
+
 `
+
 const Image = styled.img`
     width: 100%;
     height: 100%;
