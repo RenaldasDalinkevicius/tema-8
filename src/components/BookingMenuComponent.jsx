@@ -4,7 +4,6 @@ import { faCalendarDays, faUser, faAngleDown, faPlus, faMinus, faSearch } from "
 import { useEffect, useState } from "react"
 import DatePicker from "react-datepicker"
 import "react-datepicker/dist/react-datepicker.css";
-import { subDays } from "date-fns"
 import { useDispatch, useSelector } from "react-redux"
 import { updateArrive, updateDepart, updateTotal, updateRooms, updateAdults, updateKids } from "./bookingSlice"
 import { useNavigate } from "react-router-dom"
@@ -90,8 +89,8 @@ export function BookingMenuComponent () {
 
     return (
         <Wrapper>
-            <DatePicker minDate={subDays(new Date(), 0)} selected={arrive} onChange={(date) => dispatch(updateArrive(date.toLocaleDateString()))} customInput={<Button><Icon icon={faCalendarDays}/>Ankomst: {`${arrive}`}</Button>}/>
-            <DatePicker minDate={subDays(new Date(), -1)} selected={depart} onChange={(date) => dispatch(updateDepart(date.toLocaleDateString()))} customInput={<Button><Icon icon={faCalendarDays}/>Avreise: {`${depart}`}</Button>}/>
+            <DatePicker selected={arrive} onChange={(date) => dispatch(updateArrive(date.toLocaleDateString()))} customInput={<Button><Icon icon={faCalendarDays}/>Ankomst: {`${arrive}`}</Button>}/>
+            <DatePicker selected={depart} onChange={(date) => dispatch(updateDepart(date.toLocaleDateString()))} customInput={<Button><Icon icon={faCalendarDays}/>Avreise: {`${depart}`}</Button>}/>
             <TotalWrapper>
                 <Button onClick={() => setIsOpen(!isOpen)}>
                     <Icon icon={faAngleDown} open={isOpen}/>
