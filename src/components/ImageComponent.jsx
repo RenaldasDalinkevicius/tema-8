@@ -4,12 +4,11 @@ const ImageGrid = styled.div`
     display: grid;
     gap: var(--spacing-medium);
     grid-template-areas:
-    "one one one two"
-    "one one one three"
-    "four four four four"
-    "four four four four";
-    grid-template-rows: repeat(4, 25%);
-    grid-template-columns: repeat(4, 25%);
+    "one one two"
+    "one one three"
+    "four four four";
+    grid-template-rows: repeat(3, 33%);
+    grid-template-columns: repeat(3, 33%);
     max-height: 500px;
     @media (min-width: 700px) {
         width: 100%;
